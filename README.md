@@ -33,13 +33,15 @@ Subsequent response definitions will only detail the expected value of the `data
         "UID": "1510725",
         "name": "John Doe",
         "class": "member",
-        "Access": "True"
+        "Access": "True",
+        "Tools": "None"
     },
     {
         "UID": "669686",
         "name": "Ro Boh",
         "class": "officer",
-        "Access": "True"
+        "Access": "True",
+        "Tools": "All"
     }
 ]
 ```
@@ -56,8 +58,9 @@ Subsequent response definitions will only detail the expected value of the `data
 - `"name":string` Member Name
 - `"class":string` Status of member in the organization
 - `"Access":string` Has access to building
+- `"Tools":string` Has access to these tools
 
-If a device with the given identifier already exists, the existing device will be overwritten.
+If a Member with the given identifier already exists, the existing member will be overwritten.
 
 **Response**
 
@@ -68,7 +71,8 @@ If a device with the given identifier already exists, the existing device will b
     "UID": "1510725",
     "name": "John Doe",
     "class": "member",
-    "Access": "True"
+    "Access": "True",
+    "Tools": "None"
 }
 ```
 
@@ -86,7 +90,8 @@ If a device with the given identifier already exists, the existing device will b
     "UID": "1510725",
     "name": "John Doe",
     "class": "member",
-    "Access": "True"
+    "Access": "True",
+    "Tools": "None"
 }
 ```
 
